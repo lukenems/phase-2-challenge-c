@@ -6,3 +6,8 @@ function weekday(date) {
     return dayName[date.getDay()]
   }
 }
+
+
+
+
+module.exports = {weekday}
