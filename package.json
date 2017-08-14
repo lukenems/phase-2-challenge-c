@@ -1,0 +1,24 @@
+{
+  "name": "phase-2-challenge-c",
+  "version": "1.0.0",
+  "description": "This is the challenge for getting into phase 2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha part-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukenems/phase-2-challenge-c.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukenems/phase-2-challenge-c/issues"
+  },
+  "homepage": "https://github.com/lukenems/phase-2-challenge-c#readme",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}
