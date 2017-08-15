@@ -1,4 +1,4 @@
-function weekday(date) {
+const weekday = (date) => {
   if(!(date instanceof Date)) {
     throw new Error("Enter a date object")
   } else {
@@ -7,7 +7,18 @@ function weekday(date) {
   }
 }
 
+const capitalizeFourth = (orgStr) => {
+  let setup = orgStr.toLowerCase().split("");
+  for(i=0; i<=setup.length; i+4) {
+
+  }
+};
 
 
+const getValues = (obj) => {
+  if(Array.isArray(obj) || typeof obj !== 'object') {
+    throw new Error("Enter an object")
+  } return Object.values(obj)}
 
-module.exports = {weekday}
+
+module.exports = {weekday, getValues}
