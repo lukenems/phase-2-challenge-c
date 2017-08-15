@@ -16,9 +16,11 @@ const capitalizeFourth = (orgStr) => {
 
 
 const getValues = (obj) => {
-  if(Array.isArray(obj) || typeof obj !== 'object') {
-    throw new Error("Enter an object")
-  } return Object.values(obj)}
+  if (Array.isArray(obj) || typeof obj !== 'object') {
+    throw new Error("Enter an Object")
+  }return Object.keys(obj).map(function(values) {
+    return obj[values];
+})}
 
 
 module.exports = {weekday, getValues}

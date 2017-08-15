@@ -32,4 +32,8 @@ describe('getValues', () => {
     }
     expect(getValues(friend)).to.deep.equal(['Dominique', 30, '555-555-5555'])
   })
+  it('should throw an error when input is not an Object', () => {
+    let fail = 5678
+    expect(() => {getValues(fail)}).to.throw("Enter an Object")
+  })
 })
