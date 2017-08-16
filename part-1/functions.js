@@ -13,12 +13,9 @@ const capitalizeFourth = (orgStr) => {
   } else {
   let setup = orgStr.toLowerCase().split("");
   for(i=3; i < setup.length; i+=4) {
-      if(!((i+1) % 4)) {
-        setup[i] = setup[i].toUpperCase()
-      }}
-    return setup.join('')
-    }
-}
+    setup[i] = setup[i].toUpperCase()
+  } return setup.join('')
+}}
 
 const filterAround = (array, lower, upper) => {
   let outliar = []
