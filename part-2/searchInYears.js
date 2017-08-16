@@ -21,15 +21,20 @@ const carSearch = (yearRange) => {
 }
 console.log('Finding cars from ' + x + ' to ' + y + '...\n');
 carSearch(yearRange)
-// const query = cars.filter(data => {
-//   if(data.year >= x && data.year <= y) {
-//   return match = ({
+
+
+// function query (x,y) {
+//
+// let search = cars.filter(data => {
+//   data.year >= x && data.year <= y
+//   let match = ({
 //     "id": data.id,
 //     "make": data.make,
 //     "model": data.model,
 //     "year": data.year})
+//   })
 //
-//   }})
+// console.log(search)
+// }
 //
-//
-//     console.log(query)
+// query(x,y)

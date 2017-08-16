@@ -1,5 +1,6 @@
 const {weekday} = require('./functions.js')
 const {getValues} = require ('./functions.js')
+const {capitalizeFourth} = require('./functions.js')
 const {expect} = require('chai')
 
 describe('weekday', () => {

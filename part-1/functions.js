@@ -8,11 +8,19 @@ const weekday = (date) => {
 }
 
 const capitalizeFourth = (orgStr) => {
+  if(typeof orgStr !== 'string') {
+    throw new Error('Enter a String')
+  } else {
   let setup = orgStr.toLowerCase().split("");
-  for(i=0; i<=setup.length; i+4) {
+  for(i=3; i < setup.length; i+=4) {
+      if(!((i+1) % 4)) {
+        setup[i] = setup[i].toUpperCase()
+      }}
+    return setup.join('')
+    }
+}
 
-  }
-};
+
 
 
 const getValues = (obj) => {
@@ -23,4 +31,4 @@ const getValues = (obj) => {
 })}
 
 
-module.exports = {weekday, getValues}
+module.exports = {weekday, capitalizeFourth, getValues}
