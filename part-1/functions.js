@@ -1,3 +1,5 @@
+const {assert} = require('assert')
+
 const weekday = (date) => {
   if(!(date instanceof Date)) {
     throw new Error("Enter a date object")
@@ -20,7 +22,26 @@ const capitalizeFourth = (orgStr) => {
     }
 }
 
+const filterAround = (array, lower, upper) => {
+  let outliar = []
+  for (i = 0; i < array.length; i++ ) {
+    if (typeof array[i] !== 'string'){
+      throw new Error("Enter an array of Strings")
+    }
+    if(array[i] < lower || array[i] > upper) {
+      outliar.push(array[i])
+    }
+  }return outliar
+}
 
+
+// function filterBetween(array, min, max) {
+//   if (Array.isArray(array)) {
+//   return array.filter(function(animal) {
+//      return animal >= min && animal <= max
+// })} else {
+//   throw new Error("Please enter an array as the first parameter")
+// }}
 
 
 const getValues = (obj) => {
@@ -31,4 +52,4 @@ const getValues = (obj) => {
 })}
 
 
-module.exports = {weekday, capitalizeFourth, getValues}
+module.exports = {weekday, capitalizeFourth, getValues, filterAround}

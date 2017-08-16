@@ -1,6 +1,7 @@
 const {weekday} = require('./functions.js')
 const {getValues} = require ('./functions.js')
 const {capitalizeFourth} = require('./functions.js')
+const {filterAround} = require('./functions.js')
 const {expect} = require('chai')
 
 describe('weekday', () => {
@@ -36,5 +37,16 @@ describe('getValues', () => {
   it('should throw an error when input is not an Object', () => {
     let fail = 5678
     expect(() => {getValues(fail)}).to.throw("Enter an Object")
+  })
+})
+
+describe('filterAround', () => {
+  it('should take an array of strings and return a new array with elements that alphabetically come before and after the original array\'s elements ', () => {
+    let animals = ['dog', 'cat', 'zebra', 'ape', 'lion', 'cow']
+    expect(filterAround(animals, 'cow', 'dog')).to.deep.equal(['cat', 'zebra', 'ape', 'lion'])
+  })
+  it('should throw an error when the data input is not an array of strings', () => {
+    let minutes = [5, 10, 30]
+    expect(() => {filterAround(minutes)}).to.throw("Enter an array of Strings")
   })
 })

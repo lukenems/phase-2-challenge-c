@@ -61,10 +61,10 @@ capitalizeFourth("ABRACADABRA") // => "abrAcadAbra"
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `capitalizeFourth()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `capitalizeFourth()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `capitalizeFourth()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `capitalizeFourth()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `capitalizeFourth()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `capitalizeFourth()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `capitalizeFourth()` is defined in `functions.js`.
+- [x] __10:__ Tests for `capitalizeFourth()` are passing.
 
 ### List of values for object
 
@@ -107,10 +107,10 @@ filterAround(animals, 'aardvark', 'zebu') // => []
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `filterAround()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `filterAround()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `filterAround()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `filterAround()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `filterAround()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `filterAround()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `filterAround()` is defined in `functions.js`.
+- [x] __10:__ Tests for `filterAround()` are passing.
 
 ## Part 2: Extract data from JSON file
 
