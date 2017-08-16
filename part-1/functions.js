@@ -1,5 +1,5 @@
 const weekday = (date) => {
-  if(!(date instanceof Date)) {
+  if (!(date instanceof Date)) {
     throw new Error("Enter a date object")
   } else {
     const dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -8,31 +8,31 @@ const weekday = (date) => {
 }
 
 const capitalizeFourth = (orgStr) => {
-  if(typeof orgStr !== 'string') {
+  if (typeof orgStr !== 'string') {
     throw new Error('Enter a String')
   } else {
-  let setup = orgStr.toLowerCase().split("");
-  for(i=3; i < setup.length; i+=4) {
-    setup[i] = setup[i].toUpperCase()
-  } return setup.join('')
+    let setup = orgStr.toLowerCase().split("");
+    for (i=3; i < setup.length; i+=4) {
+      setup[i] = setup[i].toUpperCase()
+    } return setup.join('')
 }}
 
 const filterAround = (array, lower, upper) => {
-  let outliar = []
+  let outliars = []
   for (i = 0; i < array.length; i++ ) {
     if (typeof array[i] !== 'string'){
       throw new Error("Enter an array of Strings")
-    } if(array[i] < lower || array[i] > upper) {
-      outliar.push(array[i])
+    } if (array[i] < lower || array[i] > upper) {
+      outliars.push(array[i])
     }
-  }return outliar
+  } return outliars
 }
 
 const getValues = (obj) => {
   if (Array.isArray(obj) || typeof obj !== 'object') {
     throw new Error("Enter an Object")
-  }return Object.keys(obj).map(function(values) {
-    return obj[values];
+  } return Object.keys(obj).map(function(values) {
+    return obj[values]
 })}
 
 
