@@ -1,6 +1,5 @@
 const cars = require('./cars.json')
 const search = process.argv[2]
-
 const searchByModel = (search) => {
   let matches = []
   for (i=0; i<cars.length; i++) {

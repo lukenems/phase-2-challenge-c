@@ -55,7 +55,7 @@ button {
   width: 60px;
 }
 
-/*sections*/
+/*Genres*/
 
 .novels {
   display: flex;
@@ -92,7 +92,7 @@ button {
 }
 
 
-/*Section Items*/
+/*Section Display*/
 
 .title1 {
   display: flex;
@@ -108,15 +108,15 @@ button {
 }
 
 .name {
-  width: 50%;
+  width: 33%;
 }
 
 .author {
-  width: 25%;
+  width: 33%;
 }
 
 .buy {
   display; flex;
   align-self: center;
-  width: 25%;
+  width: 34%;
 }
