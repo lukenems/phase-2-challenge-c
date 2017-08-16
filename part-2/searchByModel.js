@@ -1,9 +1,9 @@
 const cars = require('./cars.json')
-const search = process.argv[2]
-const searchByModel = (search) => {
+const model = process.argv[2]
+const searchByModel = (model) => {
   let matches = []
   for (i=0; i<cars.length; i++) {
-  if(cars[i].model.toLowerCase() === search.toLowerCase()) {
+  if(cars[i].model.toLowerCase() === model.toLowerCase()) {
     let match = ({
     "id": cars[i].id,
     "model": cars[i].model,
@@ -15,5 +15,5 @@ const searchByModel = (search) => {
   }}
   console.log(matches)
 }
-console.log('Finding cars with model ' + '"' + search + '"' + '...\n');
-searchByModel(search)
+console.log('Finding cars with model ' + '"' + model + '"' + '...\n');
+searchByModel(model)

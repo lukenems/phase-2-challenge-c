@@ -3,7 +3,7 @@ const yearRange = process.argv[2].split("-")
 const minYear = Number.parseInt(yearRange[0])
 const maxYear = Number.parseInt(yearRange[1])
 if(!yearRange[1] || isNaN(minYear) || isNaN(maxYear)) {
-  throw new Error("Enter two full years YYYY-YYYY")
+  throw new Error("Enter two full years: YYYY-YYYY")
 }
 const carSearch = (yearRange) => {
   var withinRange = []
@@ -19,5 +19,5 @@ const carSearch = (yearRange) => {
     }}
   console.log(withinRange)
 }
-console.log('Finding cars from ' + x + ' to ' + y + '...\n');
+console.log('Finding cars from ' + minYear + ' to ' + maxYear + '...\n');
 carSearch(yearRange)
